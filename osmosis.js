@@ -39,6 +39,10 @@ app.use(fusion.plugin());
 // Client-side scripts
 app.use(express.static(path.join(__dirname, 'client')));
 
+// Static assets for ui
+app.use("/assets", express.static(path.join(__dirname, 'assets')));
+
+
 var server = http.createServer(app);
 
 server.listen(app.get('port'),'localhost', function() {
