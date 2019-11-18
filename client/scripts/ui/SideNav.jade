@@ -1,19 +1,23 @@
 .ui-SideNav
-  div.mbm
-    i.fi.fi-logo(style= 'font-size: 50px;')
-  div(style= 'text-align: center;') Library
 
-  ul
-    li
-      div.mbm
-        i.fi.fi-calendar.fsxxxl
-      div(style= 'text-align: center;') Step 1 Schedule
-    li
-      div.mbm
-        i.fi.fi-builder.fsxxxl
-      div(style= 'text-align: center;') Quiz builder
-    li
-      div.mbm
-        i.fi.fi-group.fsxxxl
-      div(style= 'text-align: center;') Team workspace
+  a.top-option(href='', data-bind= 'click: displayAlert')
+    i.fi.fi-logo.fsxxxxxl
+    .icon-text.ptm.align-center Library
+
+  ul.sidenav-main-options
+
+    li.sidenav-list-item
+      a(href='', data-bind= 'click: displayAlert')
+        i.fi.fi-calendar
+        .icon-text.ptm.align-center Step 1 Schedule
+
+    li.sidenav-list-item
+      a(href='', data-bind= 'click: displayAlert')
+        i.fi.fi-builder
+        .icon-text.ptm.align-center Quiz builder
+
+    li.sidenav-list-item
+      a(href='', data-bind= 'click: displayAlert')
+        i.fi.fi-group
+        .icon-text.ptm.align-center Team workspace
 

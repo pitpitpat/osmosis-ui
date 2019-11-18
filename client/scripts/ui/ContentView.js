@@ -5,6 +5,11 @@ function ContentView(bind,args) {
 
     fs.mix(this, 'ui/BreadCrumb');
 
+    fs.mix(this, 'ui/Video')
+    fs.mix(this, 'ui/VideoOverview');
+
+    fs.mix(this, 'ui/VideosCard');
+
 }
 
 module.exports = ContentView;
