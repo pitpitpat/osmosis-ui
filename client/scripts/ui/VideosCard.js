@@ -14,4 +14,3 @@ function VideosCard(bind,args) {
 }
 
 module.exports = VideosCard;
-

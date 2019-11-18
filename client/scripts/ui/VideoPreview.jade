@@ -1,5 +1,6 @@
 .ui-VideoPreview
-  img.video-thumbnail(src= 'assets/img/video_thumbnail_0.jpg')
+  a.video-thumbnail(href='', data-bind='click: displayAlert')
+    img.thumbnail-img(data-bind='attr:{src: thumbnailSrc}')
   .video-details
-    div(data-bind= 'text: videoTitle')
-    span(data-bind= 'text: channelName')
+    a.video-title(href='', data-bind='text: videoTitle, click: displayAlert')
+    a.channel-title(href='', data-bind='text: channelName, click: displayAlert')
