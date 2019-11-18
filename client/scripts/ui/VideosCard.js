@@ -1,18 +1,16 @@
 
 function VideosCard(bind,args) {
 
-  this.title = 'Up Next';
+  this.title = args.videosCardTitle;
 
-  // this.list = fs.mixList(this,'.mix-list');
-  // this.list.push('ui/ListElement',{
-  //   title: 'Title example '+(this.list.items.length+1),
-  //   body: 'Here is an example body.',
-  // });
+  bind(this);
 
-}
+  this.list = fs.mixList(this,'.video-preview-list');
 
-VideosCard.prototype.displayAlert = function() {
-  alert("Clicked!");
+  for (videoPreview of args.videoPreviews) {
+    this.list.push('ui/VideoPreview', videoPreview);
+  }
+
 }
 
 module.exports = VideosCard;

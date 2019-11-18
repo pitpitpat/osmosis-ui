@@ -1,14 +1,24 @@
 
 function ContentView(bind,args) {
 
-    bind(this);
+  bind(this);
 
-    fs.mix(this, 'ui/BreadCrumb');
+  fs.mix(this, 'ui/BreadCrumb');
 
-    fs.mix(this, 'ui/Video')
-    fs.mix(this, 'ui/VideoOverview');
+  fs.mix(this, 'ui/Video')
+  fs.mix(this, 'ui/VideoOverview');
 
-    fs.mix(this, 'ui/VideosCard');
+  this.nextVideosCardData = {
+    'videosCardTitle': 'Up Next',
+    'videoPreviews': [
+      {
+        videoTitle: 'Blood pressure, blood flow and resistance',
+        channelName: 'Osmosis',
+      }
+    ]
+  };
+
+  fs.mix(this, 'ui/VideosCard', this.nextVideosCardData);
 
 }
 
