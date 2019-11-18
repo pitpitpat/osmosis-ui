@@ -1,7 +1,14 @@
 
+display: flex;
 background-color: #fff;
-padding: 10px;
+padding: 8px;
 border: 1px solid #ddd;
+
+.vl {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 .search-input {
     width: 480px;
@@ -11,4 +18,45 @@ border: 1px solid #ddd;
     padding: 6px 5px;
     font-size: 0.85rem;
     outline: 0;
+}
+
+.user-options {
+    display: flex;
+    margin-left: auto;
+}
+
+.user-option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5rem;
+    color: rgb(52, 111, 198);
+}
+
+.user-option.disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.profile-img {
+    height: 35px;
+    border-radius: 50%;
+}
+
+.badge:after {
+    position: absolute;
+    right: -5%;
+    top: 1%;
+    content: attr(data-count);
+    font-size: 45%;
+    font-family: Arial;
+    padding: 3px;
+    border-radius: 999px;
+    line-height: 0.75em;
+    color: #FFFFFF;
+    background: rgb(255, 0, 0);
+    text-align: center;
+    min-width: 1.5em;
+    font-weight: bold;
 }

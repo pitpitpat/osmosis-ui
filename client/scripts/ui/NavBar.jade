@@ -1,2 +1,14 @@
 .ui-NavBar
-    input.search-input(placeholder= 'Search for videos, flashcards, and questions')
+  input.search-input(placeholder= 'Search for videos, flashcards, and questions')
+
+  .user-options
+    a.user-option(href='', data-bind='click: displayAlert')
+      i(data-count= '73').fa.fa-clone.badge
+    a.user-option.disabled(href='', data-bind='click: displayAlert')
+      i.fa.fa-server
+    span.vl
+    a.user-option(href='', data-bind='click: displayAlert')
+      i(data-count= '97').fa.fa-clock-o.badge
+    span.vl
+    a.user-option(href='', data-bind='click: displayAlert')
+      img.profile-img(src='assets/img/profile-pic.png')
