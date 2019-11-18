@@ -1,5 +1,8 @@
 .ui-SideNav
 
+  a.toggle-btn(href='', data-bind= 'click: displayAlert')
+    i.fa.fa-bars.fsxxxxl
+
   a.top-option(href='', data-bind= 'click: displayAlert')
     i.fi.fi-logo.fsxxxxxl
     .icon-text.ptm.align-center Library
@@ -20,4 +23,16 @@
       a(href='', data-bind= 'click: displayAlert')
         i.fi.fi-group
         .icon-text.ptm.align-center Team workspace
+
+  ul.sidenav-secondary-options
+
+    li.sidenav-list-item
+      a(href='', data-bind= 'click: displayAlert')
+        i.fa.fa-plus
+        .icon-text.ptm.align-center Add Tools
+
+    li.sidenav-list-item
+      a(href='', data-bind= 'click: displayAlert')
+        i.fa.fa-question
+        .icon-text.ptm.align-center Help
 
